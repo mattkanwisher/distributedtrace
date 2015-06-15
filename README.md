@@ -2,7 +2,6 @@
 
 A GO Zipkin backend, this takes in zipkin protocol and stores it in InfluxDb/Redis. Mysql support coming soon. Extracted from my book http://microservicesingo.com
 
-[![Build Status](https://travis-ci.org/mattkanwisher/distributedtrace.svg)](https://travis-ci.org/mattkanwisher/distributedtrace)
 [![GoDoc](https://godoc.org/github.com/mattkanwisher/distributedtrace?status.svg)](https://godoc.org/github.com/mattkanwisher/distributedtrace)
 
 [ZipKin](https://github.com/twitter/zipkin) proxy implementation in Go. Use as a library
