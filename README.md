@@ -16,16 +16,16 @@ $ go get github.com/mattkanwisher/distributedtrace/zipkin
 
 ## USAGE
 
-Right now the CLI takes configuration parameters from the environment variable.
+Right now the CLI takes configuration parameters on command line only, later on we will support environment variables.
 
-* `ZIPKIN_ADDR` - The address to listen on. Defaults to `0.0.0.0:9410`
-* `ZIPKIN_OUTPUT` - The output to proxy to. `influx|redis|console|null`
-* `ZIPKIN_OUTPUT_ADDR` - The output address for the specified output kind.
+* Influx/Redis/Mysql as the ouput type, currently only Influx supported
+* Url to output to
+* -l "0.0.0.0:9410" # the bind address
 
 ## EXAMPLE
 
 ```sh
-$ ZIPKIN_OUTPUT=influx ZIPKIN_OUTPUT_ADDR=http://admin:admin@192.168.59.103:8086/spans
+$ ./bin/zipkin influx  http://admin:admin@192.168.59.103:8086/spans  -l "0.0.0.0:9410"
 ```
 
 Outputs to [InfluxDB](http://influxdb.com) at address `192.168.59.103:8086` with username
