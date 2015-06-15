@@ -1,0 +1,9 @@
+[
+  {
+    "name" : "hd_used",
+    "columns" : ["value", "host", "mount"],
+    "points" : [
+      [23.2, "serverA", "/mnt"]
+    ]
+  }
+]
